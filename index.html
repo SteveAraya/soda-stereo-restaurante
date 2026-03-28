@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Soda Stereo Restaurante — La Fortuna</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ── Navigation ─────────────────────────────────────────── -->
+<nav id="navbar">
+  <div class="container nav-inner">
+    <a href="#hero" class="nav-logo">SODA <span>STEREO</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">Nosotros</a></li>
+      <li><a href="#menu">Menú</a></li>
+      <li><a href="#contact">Contacto</a></li>
+      <li><a href="#contact" class="btn btn-primary nav-cta">Reservar</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile nav -->
+<div class="mobile-nav" id="mobile-nav">
+  <a href="#about"   onclick="closeMobileNav()">Nosotros</a>
+  <a href="#menu"    onclick="closeMobileNav()">Menú</a>
+  <a href="#contact" onclick="closeMobileNav()">Contacto</a>
+  <a href="#contact" onclick="closeMobileNav()" class="btn btn-primary" style="margin-top:1rem">Reservar</a>
+</div>
+
+<!-- ── Hero ───────────────────────────────────────────────── -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-vinyl"></div>
+  <div class="container hero-content">
+    <p class="hero-eyebrow">Modern Costa Rican Street Food · La Fortuna</p>
+    <h1 class="hero-title">
+      SODA
+      <span class="accent">STEREO</span>
+    </h1>
+    <p class="hero-subtitle">Restaurante</p>
+    <div class="hero-actions">
+      <a href="#menu"    class="btn btn-primary">Ver Menú</a>
+      <a href="#contact" class="btn btn-outline">Reservar mesa</a>
+    </div>
+  </div>
+  <div class="hero-badge">
+    <strong>PURA</strong>
+    VIDA
+  </div>
+</section>
+
+<!-- ── Strip ──────────────────────────────────────────────── -->
+<div id="about-strip">
+  <div class="strip-inner" aria-hidden="true">
+    <!-- duplicated for infinite loop -->
+    <span class="strip-item">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="white"><circle cx="8" cy="8" r="6" stroke="white" stroke-width="2" fill="none"/><circle cx="8" cy="8" r="2" fill="white"/></svg>
+      PASTA
+    </span>
+    <span class="strip-item">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="white"><path d="M2 8 Q8 2 14 8 Q8 14 2 8Z" stroke="white" stroke-width="1.5" fill="none"/></svg>
+      STREET FOOD
+    </span>
+    <span class="strip-item">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="white"><circle cx="8" cy="8" r="6" stroke="white" stroke-width="2" fill="none"/><circle cx="8" cy="8" r="2" fill="white"/></svg>
+      TACOS & BURRITOS
+    </span>
+    <span class="strip-item">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="white"><path d="M2 8 Q8 2 14 8 Q8 14 2 8Z" stroke="white" stroke-width="1.5" fill="none"/></svg>
+      CASADO STEREO
+    </span>
+    <span class="strip-item">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="white"><circle cx="8" cy="8" r="6" stroke="white" stroke-width="2" fill="none"/><circle cx="8" cy="8" r="2" fill="white"/></svg>
+      GRILLS &amp; STEAKS
+    </span>
+    <span class="strip-item">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="white"><path d="M2 8 Q8 2 14 8 Q8 14 2 8Z" stroke="white" stroke-width="1.5" fill="none"/></svg>
+      MARISCOS
+    </span>
+    <span class="strip-item">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="white"><circle cx="8" cy="8" r="6" stroke="white" stroke-width="2" fill="none"/><circle cx="8" cy="8" r="2" fill="white"/></svg>
+      POSTRES
+    </span>
+    <span class="strip-item">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="white"><path d="M2 8 Q8 2 14 8 Q8 14 2 8Z" stroke="white" stroke-width="1.5" fill="none"/></svg>
+      PURA VIDA
+    </span>
+    <!-- repeat -->
+    <span class="strip-item">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="white"><circle cx="8" cy="8" r="6" stroke="white" stroke-width="2" fill="none"/><circle cx="8" cy="8" r="2" fill="white"/></svg>
+      PASTA
+    </span>
+    <span class="strip-item">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="white"><path d="M2 8 Q8 2 14 8 Q8 14 2 8Z" stroke="white" stroke-width="1.5" fill="none"/></svg>
+      STREET FOOD
+    </span>
+    <span class="strip-item">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="white"><circle cx="8" cy="8" r="6" stroke="white" stroke-width="2" fill="none"/><circle cx="8" cy="8" r="2" fill="white"/></svg>
+      TACOS & BURRITOS
+    </span>
+    <span class="strip-item">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="white"><path d="M2 8 Q8 2 14 8 Q8 14 2 8Z" stroke="white" stroke-width="1.5" fill="none"/></svg>
+      CASADO STEREO
+    </span>
+    <span class="strip-item">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="white"><circle cx="8" cy="8" r="6" stroke="white" stroke-width="2" fill="none"/><circle cx="8" cy="8" r="2" fill="white"/></svg>
+      GRILLS &amp; STEAKS
+    </span>
+    <span class="strip-item">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="white"><path d="M2 8 Q8 2 14 8 Q8 14 2 8Z" stroke="white" stroke-width="1.5" fill="none"/></svg>
+      MARISCOS
+    </span>
+    <span class="strip-item">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="white"><circle cx="8" cy="8" r="6" stroke="white" stroke-width="2" fill="none"/><circle cx="8" cy="8" r="2" fill="white"/></svg>
+      POSTRES
+    </span>
+    <span class="strip-item">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="white"><path d="M2 8 Q8 2 14 8 Q8 14 2 8Z" stroke="white" stroke-width="1.5" fill="none"/></svg>
+      PURA VIDA
+    </span>
+  </div>
+</div>
+
+<!-- ── About ───────────────────────────────────────────────── -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-text">
+        <p class="section-label">Nuestra historia</p>
+        <h2 class="section-title">Modern Costa Rican <span>Street Food</span></h2>
+        <p>
+          En Soda Stereo Restaurante fusionamos la esencia del sabor costarricense con
+          influencias contemporáneas, en un ambiente que celebra la música, la cultura
+          y la buena mesa.
+        </p>
+        <p>
+          Ubicados en el corazón de La Fortuna, ofrecemos desde el clásico casado hasta
+          cortes a la parrilla, pasta fresca y los mejores tacos Birria de la zona.
+          Todo preparado con ingredientes locales y mucha Pura Vida.
+        </p>
+        <div class="about-stats">
+          <div class="stat-card">
+            <div class="stat-num">100%</div>
+            <div class="stat-label">Ingredientes locales</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">40+</div>
+            <div class="stat-label">Platillos en menú</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">6</div>
+            <div class="stat-label">Salsas exclusivas</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">☆ 5</div>
+            <div class="stat-label">Experiencia</div>
+          </div>
+        </div>
+      </div>
+      <div class="about-visual">
+        <img src="images/img-001.jpg" alt="Fachada de Soda Stereo Restaurante en La Fortuna" class="about-img" />
+        <div class="about-tag">La Fortuna · Costa Rica</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Menu ───────────────────────────────────────────────── -->
+<section id="menu">
+  <div class="container">
+    <div class="menu-header">
+      <p class="section-label">Lo que ofrecemos</p>
+      <h2 class="section-title">Nuestro <span>Menú</span></h2>
+    </div>
+
+    <!-- Tabs -->
+    <div class="menu-tabs" role="tablist">
+      <button class="tab-btn active" onclick="showCategory('appetizers')" role="tab">Appetizers</button>
+      <button class="tab-btn" onclick="showCategory('pasta')"       role="tab">Pasta</button>
+      <button class="tab-btn" onclick="showCategory('street')"      role="tab">Street Food</button>
+      <button class="tab-btn" onclick="showCategory('casa')"        role="tab">Pura Vida</button>
+      <button class="tab-btn" onclick="showCategory('specials')"    role="tab">Specials</button>
+      <button class="tab-btn" onclick="showCategory('kids')"        role="tab">Kids</button>
+      <button class="tab-btn" onclick="showCategory('desserts')"    role="tab">Desserts</button>
+    </div>
+
+    <!-- ── APPETIZERS ── -->
+    <div id="cat-appetizers" class="menu-category active">
+      <div class="category-title-bar">
+        <div class="category-icon">🦐</div>
+        <div>
+          <div class="category-name">Our Appetizers</div>
+        </div>
+      </div>
+      <div class="menu-grid">
+        <div class="menu-card">
+          <div class="menu-card-top">
+            <div class="menu-card-name">Costa Rican Style Fish Ceviche</div>
+            <div class="menu-card-price">₡6.000</div>
+          </div>
+          <div class="menu-card-desc">With citrus, onion and cilantro.</div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-top">
+            <div class="menu-card-name">Tartar de atun</div>
+            <div class="menu-card-price">₡7.500</div>
+          </div>
+          <div class="menu-card-desc">House sauce avocado and mango.</div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-top">
+            <div class="menu-card-name">Beef Salpicaccio</div>
+            <div class="menu-card-price">₡6.000</div>
+          </div>
+          <div class="menu-card-desc">Rustic bread, thinly sliced beef in house sauce.</div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-top">
+            <div class="menu-card-name">Beef soup</div>
+            <div class="menu-card-price">₡5.500</div>
+          </div>
+          <div class="menu-card-desc">Local beef and homemade flavor, served with rice.</div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-top">
+            <div class="menu-card-name">Seafood soup</div>
+            <div class="menu-card-price">₡7.000</div>
+          </div>
+          <div class="menu-card-desc">Mixed fresh seafood served with rice.</div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-top">
+            <div class="menu-card-name">Cesar salad</div>
+            <div class="menu-card-price">₡6.000</div>
+          </div>
+          <div class="menu-card-desc">Fresh Romaine, crunchy croutons, Parmesan chesse, in our signature Caesar dressing.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── PASTA ── -->
+    <div id="cat-pasta" class="menu-category">
+      <div class="category-title-bar">
+        <div class="category-icon">🍝</div>
+        <div>
+          <div class="category-name">Pasta</div>
+          <div class="category-sub">Served with garlic breed.</div>
+        </div>
+      </div>
+      <div class="menu-grid">
+        <div class="menu-card">
+          <div class="menu-card-top">
+            <div class="menu-card-name">Spaghetti carbonara</div>
+            <div class="menu-card-price">₡6.000</div>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-top">
+            <div class="menu-card-name">Fettuccine Pesto with Chicken</div>
+            <div class="menu-card-price">₡7.000</div>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-top">
+            <div class="menu-card-name">Spaghetti pomodoro with Shrimp</div>
+            <div class="menu-card-price">₡8.000</div>
+          </div>
+        </div>
+        <div class="menu-card featured">
+          <div class="featured-ribbon">Signature</div>
+          <div class="menu-card-top">
+            <div class="menu-card-name">Fettuccine with Salmon Stereo</div>
+            <div class="menu-card-price">₡12.000</div>
+          </div>
+        </div>
+      </div>
+      <p class="category-note">Served with garlic breed.</p>
+    </div>
+
+    <!-- ── STREET FOOD ── -->
+    <div id="cat-street" class="menu-category">
+      <div class="category-title-bar">
+        <div class="category-icon">🌮</div>
+        <div>
+          <div class="category-name">Costa Rican Street Food</div>
+          <div class="category-sub">"De Música Ligera"</div>
+        </div>
+      </div>
+      <div class="menu-grid">
+        <div class="menu-card featured">
+          <div class="featured-ribbon">Fan Favorite</div>
+          <div class="menu-card-top">
+            <div class="menu-card-name">Stereo Burger</div>
+            <div class="menu-card-price">₡8.000</div>
+          </div>
+          <div class="menu-card-desc">Caramelized bacon and onion in BBQ sauce.</div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-top">
+            <div class="menu-card-name">Classic Beef o Chicken Burger</div>
+            <div class="menu-card-price">₡7.500</div>
+          </div>
+          <div class="menu-card-desc">Lettuce, chesse, pickles, onion, bacon and house sauce.</div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-top">
+            <div class="menu-card-name">Birria Tacos</div>
+            <div class="menu-card-price">₡7.000</div>
+          </div>
+          <div class="menu-card-desc">Crispy corn tortilla filled with slow cooked beef with fresh onion and cilantro.</div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-top">
+            <div class="menu-card-name">Chicken o Shrimp Tacos</div>
+            <div class="menu-card-price">₡7.000</div>
+          </div>
+          <div class="menu-card-desc">Served in corn tortilla with fresh onion and cilantro.</div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-top">
+            <div class="menu-card-name">Stereo Burrito</div>
+            <div class="menu-card-price">₡7.500</div>
+          </div>
+          <div class="menu-card-desc">Burger Burrito, caramelized bacon and onion in BBQ sauce.</div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-top">
+            <div class="menu-card-name">Chicken o Shrimp burrito</div>
+            <div class="menu-card-price">₡7.500</div>
+          </div>
+          <div class="menu-card-desc">Served with fries, chesse, coleslaw.</div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-top">
+            <div class="menu-card-name">Grilled Chicken o Chorizo Sandwich</div>
+            <div class="menu-card-price">₡7.500</div>
+          </div>
+          <div class="menu-card-desc">Served in a rustic bread with chesse, lettuce, chimichurri and onions.</div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-top">
+            <div class="menu-card-name">Quesadilla</div>
+            <div class="menu-card-price">₡6.000</div>
+          </div>
+          <div class="menu-card-desc">(Chicken, Beef, Shrimp)</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── DE LA CASA ── -->
+    <div id="cat-casa" class="menu-category">
+      <div class="category-title-bar">
+        <div class="category-icon">🇨🇷</div>
+        <div>
+          <div class="category-name">"Pura Vida" de la Casa</div>
+        </div>
+      </div>
+      <div class="menu-grid">
+        <div class="menu-card">
+          <div class="menu-card-top">
+            <div class="menu-card-name">Chifrijo</div>
+            <div class="menu-card-price">₡7.500</div>
+          </div>
+          <div class="menu-card-desc">A Costa Rican classic with tender cooked slow pork.</div>
+        </div>
+        <div class="menu-card featured">
+          <div class="featured-ribbon">Must Try</div>
+          <div class="menu-card-top">
+            <div class="menu-card-name">Casado Stereo</div>
+            <div class="menu-card-price">₡7.500</div>
+          </div>
+          <div class="menu-card-desc">A traditional Costa Rican plate featuring your choise of protein (chicken, beef, fish).</div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-top">
+            <div class="menu-card-name">Rice with Chicken</div>
+            <div class="menu-card-price">₡6.500</div>
+          </div>
+          <div class="menu-card-desc">Costa rican mixed Chicken &amp; rice, served with fries and salad.</div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-top">
+            <div class="menu-card-name">Vigoron</div>
+            <div class="menu-card-price">₡7.500</div>
+          </div>
+          <div class="menu-card-desc">Cassava Root with tender fried pork.</div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-top">
+            <div class="menu-card-name">Rice &amp; Shrimp</div>
+            <div class="menu-card-price">₡6.500</div>
+          </div>
+          <div class="menu-card-desc">Tico rice mixed with shrimp, served with fries and salad.</div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-top">
+            <div class="menu-card-name">Seafood &amp; Rice</div>
+            <div class="menu-card-price">₡8.000</div>
+          </div>
+          <div class="menu-card-desc">Costa rican mixed seafood and rice, served with fries and salad.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── SPECIALS ── -->
+    <div id="cat-specials" class="menu-category">
+      <div class="category-title-bar">
+        <div class="category-icon">⭐</div>
+        <div>
+          <div class="category-name">Soda Stereo Specials</div>
+          <div class="category-sub">Served with mashed potatoes and Veggies.</div>
+        </div>
+      </div>
+      <div class="menu-grid">
+        <div class="menu-card featured">
+          <div class="featured-ribbon">Our #1</div>
+          <div class="menu-card-top">
+            <div class="menu-card-name">Sarten Stereo</div>
+            <div class="menu-card-price">₡17.000</div>
+          </div>
+          <div class="menu-card-desc">Hot skillet creamy chesse, Surf and Turf, steak &amp; shrimp.</div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-top">
+            <div class="menu-card-name">Grilled Rid bye steak</div>
+            <div class="menu-card-price">₡16.000</div>
+          </div>
+          <div class="menu-card-desc">Local beef, known for its natural marbling and flavor grilled to your preference.</div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-top">
+            <div class="menu-card-name">Churrasco steak</div>
+            <div class="menu-card-price">₡14.000</div>
+          </div>
+          <div class="menu-card-desc">Costa Rican steak, grilled to your preference, seasoned simply, natural taste.</div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-top">
+            <div class="menu-card-name">CR BBQ Ribs</div>
+            <div class="menu-card-price">₡11.000</div>
+          </div>
+          <div class="menu-card-desc">Slow cooked CR pork ribs, grilled and brushed with our signature BBQ sauce.</div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-top">
+            <div class="menu-card-name">Pollo Stereo</div>
+            <div class="menu-card-price">₡8.500</div>
+          </div>
+          <div class="menu-card-desc">Grilled chicken fillet, served in house sauce.</div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-top">
+            <div class="menu-card-name">Grilled Tropical Tuna</div>
+            <div class="menu-card-price">₡13.000</div>
+          </div>
+          <div class="menu-card-desc">Fresh tuna fillet served with pineapple sauce.</div>
+        </div>
+      </div>
+      <p class="category-note">Served with mashed potatoes and Veggies.</p>
+
+      <!-- Sauces -->
+      <div style="margin-top: 3rem;">
+        <div class="category-title-bar">
+          <div class="category-icon">🍶</div>
+          <div>
+            <div class="category-name">Signature Sauces</div>
+            <div class="category-sub">Nuestras salsas exclusivas</div>
+          </div>
+        </div>
+        <div class="sauces-grid">
+          <span class="sauce-chip">Basil Sauce</span>
+          <span class="sauce-chip">Stereo Sauce</span>
+          <span class="sauce-chip">Cilantro Sauce</span>
+          <span class="sauce-chip">Spicy &amp; Sweet</span>
+          <span class="sauce-chip">Avocado Sauce</span>
+          <span class="sauce-chip">SG BBQ Sauce</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── KIDS ── -->
+    <div id="cat-kids" class="menu-category">
+      <div class="category-title-bar">
+        <div class="category-icon">🎈</div>
+        <div>
+          <div class="category-name">Children´s Menu</div>
+        </div>
+      </div>
+      <div class="menu-grid">
+        <div class="menu-card">
+          <div class="menu-card-top">
+            <div class="menu-card-name">Chesse quesadilla</div>
+            <div class="menu-card-price">₡4.500</div>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-top">
+            <div class="menu-card-name">Kids Burger</div>
+            <div class="menu-card-price">₡4.500</div>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-top">
+            <div class="menu-card-name">Chicken o Fish Nuggets</div>
+            <div class="menu-card-price">₡4.500</div>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-top">
+            <div class="menu-card-name">Pasta</div>
+            <div class="menu-card-price">₡4.500</div>
+          </div>
+          <div class="menu-card-desc">(burro, pomodoro, carbonara)</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── DESSERTS ── -->
+    <div id="cat-desserts" class="menu-category">
+      <div class="category-title-bar">
+        <div class="category-icon">🍮</div>
+        <div>
+          <div class="category-name">Desserts</div>
+        </div>
+      </div>
+      <div class="menu-grid">
+        <div class="menu-card">
+          <div class="menu-card-top">
+            <div class="menu-card-name">House Flan</div>
+            <div class="menu-card-price">₡4.000</div>
+          </div>
+        </div>
+        <div class="menu-card featured">
+          <div class="featured-ribbon">Favorite</div>
+          <div class="menu-card-top">
+            <div class="menu-card-name">Passion fruit Chesse cake</div>
+            <div class="menu-card-price">₡4.000</div>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-top">
+            <div class="menu-card-name">House Dessert</div>
+            <div class="menu-card-price">₡4.000</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /container -->
+</section>
+
+<!-- ── Specials Banner ─────────────────────────────────────── -->
+<section id="specials-banner">
+  <div class="container">
+    <div class="specials-inner">
+      <div class="specials-text">
+        <p class="section-label" style="color:var(--gold)">Top Picks</p>
+        <h2 class="section-title">Nuestros <span>Especiales</span></h2>
+        <p>Platillos que han conquistado el paladar de nuestros clientes. Preparados con los mejores ingredientes locales y técnicas que fusionan lo mejor de Costa Rica con el mundo.</p>
+        <div style="margin-top:2rem">
+          <a href="#menu" onclick="showCategory('specials');return true;" class="btn btn-primary">Ver todos los especiales</a>
+        </div>
+      </div>
+      <div class="specials-list">
+        <div class="special-item">
+          <div class="special-emoji">🥩</div>
+          <div>
+            <div class="special-name">Sartén Stereo</div>
+            <div class="special-desc">Surf &amp; Turf · queso cremoso · camarones</div>
+          </div>
+          <div class="special-price">₡17.000</div>
+        </div>
+        <div class="special-item">
+          <div class="special-emoji">🥩</div>
+          <div>
+            <div class="special-name">Grilled Rib-Eye Steak</div>
+            <div class="special-desc">Res local · marmoleo natural</div>
+          </div>
+          <div class="special-price">₡16.000</div>
+        </div>
+        <div class="special-item">
+          <div class="special-emoji">🐟</div>
+          <div>
+            <div class="special-name">Grilled Tropical Tuna</div>
+            <div class="special-desc">Atún fresco · salsa de piña</div>
+          </div>
+          <div class="special-price">₡13.000</div>
+        </div>
+        <div class="special-item">
+          <div class="special-emoji">🍖</div>
+          <div>
+            <div class="special-name">CR BBQ Ribs</div>
+            <div class="special-desc">Costillas cocidas lento · BBQ exclusivo</div>
+          </div>
+          <div class="special-price">₡11.000</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Contact ────────────────────────────────────────────── -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div>
+        <p class="section-label">Encuéntranos</p>
+        <h2 class="section-title">Visítanos en <span>La Fortuna</span></h2>
+        <div class="contact-info-items">
+          <div class="contact-info-item">
+            <div class="contact-icon">📍</div>
+            <div>
+              <strong>Dirección</strong>
+              <span>La Fortuna de San Carlos,<br/>Alajuela, Costa Rica</span>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-icon">🕐</div>
+            <div>
+              <strong>Horario</strong>
+              <span>Lunes – Sábado: 12:00 p.m. – 11:00 p.m.<br/>Domingo: 12:00 p.m. – 10:00 p.m.</span>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-icon">📞</div>
+            <div>
+              <strong>Teléfono / WhatsApp</strong>
+              <span><a href="https://wa.me/50685432369" target="_blank" rel="noopener">+506 8543 2369</a></span>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-icon">📸</div>
+            <div>
+              <strong>Redes Sociales</strong>
+              <span>@sodastreorestaurante</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="map-wrapper">
+        <iframe
+          src="https://www.google.com/maps?q=10.4742153,-84.6461418&z=17&output=embed"
+          width="100%"
+          height="100%"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Soda Stereo La Fortuna en Google Maps"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Footer ─────────────────────────────────────────────── -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-logo">SODA <span>STEREO</span></div>
+      <p class="footer-note">
+        Modern Costa Rican Street Food · La Fortuna
+      </p>
+    </div>
+    <p class="footer-allergy">
+      Por favor informe a su mesero si tiene alguna alergia alimentaria. ·
+      Please inform your server if you have any food allergies.
+    </p>
+  </div>
+</footer>
+
+<!-- Scroll to top -->
+<button id="scroll-top" onclick="scrollToTop()" aria-label="Volver arriba">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="18 15 12 9 6 15"/>
+  </svg>
+</button>
+
+<script src="main.js"></script>
+</body>
+</html>
