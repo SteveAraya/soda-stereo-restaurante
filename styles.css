@@ -532,16 +532,14 @@ footer {
 @media (max-width: 600px) {
   /* Hero */
   #hero { justify-content: center; min-height: 100svh; }
-  .hero-content { padding: 6rem 0 3rem; }
+  .hero-content { padding: 5rem 1.25rem 2rem; }
   .hero-vinyl { display: none; }
   .hero-badge {
-    position: static;
-    width: 64px; height: 64px;
-    font-size: .6rem;
-    margin-top: 1.25rem;
-    align-self: flex-start;
+    width: 70px; height: 70px;
+    font-size: .62rem;
+    bottom: 1.25rem; right: 1.25rem;
   }
-  .hero-badge strong { font-size: .85rem; }
+  .hero-badge strong { font-size: .9rem; }
 
   /* Menu */
   .menu-grid { grid-template-columns: 1fr; }
