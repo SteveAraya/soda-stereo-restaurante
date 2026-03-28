@@ -237,7 +237,7 @@ a   { text-decoration: none; color: inherit; }
 .strip-inner {
   display: flex; gap: 3rem;
   white-space: nowrap;
-  animation: marquee 22s linear infinite;
+  animation: marquee 12s linear infinite;
 }
 .strip-item {
   display: flex; align-items: center; gap: .6rem;
@@ -546,6 +546,9 @@ footer {
   .about-visual { order: -1; }
 }
 @media (max-width: 600px) {
+  /* Strip */
+  .strip-inner { animation-duration: 7s; }
+
   /* Hero */
   #hero { justify-content: center; min-height: 100svh; }
   .hero-content { padding: 5rem 1.25rem 2rem; }
