@@ -220,6 +220,7 @@ a   { text-decoration: none; color: inherit; }
   font-size: .7rem; letter-spacing: .06em;
   box-shadow: 0 0 0 6px rgba(224,16,32,.25);
   animation: pulse 2.5s ease-in-out infinite;
+  flex-shrink: 0;
 }
 .hero-badge strong { font-size: 1rem; }
 @keyframes pulse {
@@ -529,7 +530,24 @@ footer {
   .about-visual { order: -1; }
 }
 @media (max-width: 600px) {
+  /* Hero */
+  #hero { justify-content: center; min-height: 100svh; }
+  .hero-content { padding: 6rem 0 3rem; }
+  .hero-vinyl { display: none; }
+  .hero-badge {
+    position: static;
+    width: 64px; height: 64px;
+    font-size: .6rem;
+    margin-top: 1.25rem;
+    align-self: flex-start;
+  }
+  .hero-badge strong { font-size: .85rem; }
+
+  /* Menu */
   .menu-grid { grid-template-columns: 1fr; }
+  .menu-tabs { gap: .35rem; }
+  .tab-btn { padding: .4rem .9rem; font-size: .75rem; }
+
+  /* About */
   .about-stats { grid-template-columns: 1fr 1fr; }
-  .hero-badge { width: 74px; height: 74px; }
 }
